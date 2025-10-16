@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Jan Kowalski</title>
+</head>
+<body>
+
+    <header>
+        <h1>Moja Osobista Strona HTML (Bez Stylu!)</h1>
+    </header>
+
+    <hr>
+
+    <!-- Menu nawigacyjne -->
+    <nav>
+        <a href="index.html">Strona Główna / O Mnie</a> |
+        <a href="oferta.html">Oferta</a> |
+        <a href="galeria.html">Galeria</a> |
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h2>Skontaktuj się ze mną</h2>
+        
+        <h3>Formularz Kontaktowy</h3>
+        <!-- Formularz z minimum 3 polami -->
+        <form action="#" method="POST"> <!-- Akcja formularza jest pusta, gdyż jest to tylko demonstracja struktury -->
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                
+                <p>
+                    <label for="imie">Imię i Nazwisko:</label><br>
+                    <input type="text" id="imie" name="imie" required size="50">
+                </p>
+                
+                <p>
+                    <label for="email">Adres E-mail:</label><br>
+                    <input type="email" id="email" name="email" required size="50">
+                </p>
+                
+                <p>
+                    <label for="tresc">Treść Wiadomości (min. 10 znaków):</label><br>
+                    <textarea id="tresc" name="tresc" rows="10" cols="50" minlength="10" required></textarea>
+                </p>
+                
+                <p>
+                    <button type="submit">Wyślij Wiadomość</button>
+                </p>
+            </fieldset>
+        </form>
+
+        <hr>
+
+        <h3>Dane Kontaktowe (Tabela)</h3>
+        <table border="1">
+            <caption>Sposoby kontaktu</caption>
+            <thead>
+                <tr>
+                    <th>Rodzaj</th>
+                    <th>Dane</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>E-mail</td>
+                    <td><a href="mailto:jan.kowalski@example.com">jan.kowalski@example.com</a></td>
+                </tr>
+                <tr>
+                    <td>Telefon</td>
+                    <td>+48 123 456 789</td>
+                </tr>
+                <tr>
+                    <td>Adres korespondencyjny</td>
+                    <td>ul. Długa 5/2, 00-001 Miasto</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <hr>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&#169; 2024 Jan Kowalski. Projekt strony w czystym HTML.</p>
+    </footer>
+
+</body>
+</html>
